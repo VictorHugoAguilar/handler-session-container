@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Workout times" />
+    <meta name="keywords" content="Workout, times, time" />
+    <meta name="author" content="Victor Hugo Aguilar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almacenado en Storage del Navegador</title>
+    <link rel="icon" href="./assets/favicon.ico" type="icon" />
+    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+<body>
+  <p class="h1">Contenedora</p>
+<div id="app" class="alert alert-primary" role="alert"></div>
+
+<br />
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <button id="navigate" type="button" class="btn btn-info">navegar</button>
+    </div>
+  </div>
+</div>
+
+<br />
+<hr />
+
+<iframe
+  width="1000"
+  height="1000"
+  style="width: 1000px; height: 1000px"
+  src="https://famous-malabi-d5ae85.netlify.app/"
+>
+</iframe>
+<script>
+  const navigateHandler = function () {
+  window.location.href = 'https://famous-malabi-d5ae85.netlify.app/';
+  };
+
+  const navigateBtn = document.getElementById('navigate');
+  navigateBtn.addEventListener('click', navigateHandler, false);
+</script>
+</body>
+</html>
